@@ -1,0 +1,28 @@
+h2.green-headline a,
+h3.green-headline a {
+    color: #78be20;
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+}
+.green-headline,
+.green-headline a,
+a .green-headline{
+	color: #78be20;
+}
+h2.orange-headline a,
+h3.orange-headline a {
+    color: #Fa4616;
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+}
+.orange-headline,
+.orange-headline a,
+a .orange-headline{
+	color: #Fa4616;
+}
+.gray-headline-small {
+    font-size: 19px;
+    color: #000;
+    opacity: .6;
+    font-family: futura-pt, sans-serif;
+}

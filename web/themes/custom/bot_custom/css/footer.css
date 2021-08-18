@@ -1,0 +1,145 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+/**********footer********/
+footer.footer {
+    margin: 50px 0 0;
+    border: none !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100%;
+    background: url(/themes/custom/bot_custom/images/bkg-pattern.jpg) repeat;
+}
+.footcolumns {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footcolumns * {
+    color: #313131;
+}
+footer nav ul {
+/*    vertical nav menu*/
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+footer .navbar-nav > li > a {
+    padding: 0 0 5px !important;
+}
+footer .navbar-nav > li {
+    margin: 0;
+}
+.footcolumns {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 2vw;
+}
+
+footer nav li a.strong {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+footer nav li a {
+    padding: 1px 0 !important;
+}
+footer nav li a:hover {
+    color: #910048;
+}
+@media screen and (max-width:768px) {
+    .footcolumns * {
+        clear:both;
+        float: none !important;
+        padding-bottom: 2px;
+        width: 100%;
+    }
+    .footcolumns .footsy:not(:nth-child(5)):not(:nth-child(6)) {
+        width:50%;
+    }
+}
+.social-media-menu .link-text {
+    display: none;
+}
+
+/*footer nav headers*/
+.navbar-text,
+footer h2.block-title {
+    color:#910048;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0;
+}
+footer h2.block-title {
+    line-height: 1.85;
+}
+
+.social-media-menu ul.menu {
+    display: flex;
+    flex-direction: row;
+}
+.social-media-menu ul.menu a .link-text {
+    font-size: 0;
+}
+.social-media-menu ul.menu a {
+    margin-right: 10px;
+}
+.social-media-menu ul.menu a svg {
+    color: #910048;
+    font-size: 25px;
+}
+.social-media-menu ul.menu a svg path {
+    color: #910048;
+}
+.social-media-menu ul.menu li {
+    width: auto !important;
+}
+
+/*subscribe*/
+.subscribe-form {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+.subscribe-form h2 {
+    text-align: center;
+    color: #002e5d;
+}
+.subscribe-form form {
+     box-shadow: 0px 11px 43px 0px rgba(50, 50, 50, 0.31);
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.subscribe-form form * {
+    margin: 0;
+}
+.subscribe-form form .button {
+    margin-right: 0;
+    margin-left: auto;
+}
+.subscribe-form form label {
+    text-transform: uppercase;
+    line-height: normal;
+    margin-bottom: -5px;
+    display: block;
+}
+.subscribe-form .form-item {
+    width: 33.33333%;
+}
+.subscribe-form form input:not(.button) {
+    background: none;
+    font-size: 12px;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}

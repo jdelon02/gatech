@@ -1,0 +1,411 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+/**********header********/
+
+/*navbar default overrides - bootstrap*/
+.navbar-default {
+    background-color:#fff;
+    border-color: transparent;
+    border: none;
+}
+.navbar-header {
+    width: 100%;
+    margin: 0 !important;
+}
+.logo img {
+    max-width: 84px;
+    height: auto;
+    max-height: 84px;
+    width: auto;
+}
+.responsive-menu-toggle {
+    margin-left: auto;
+}
+.search-trigger ~ .responsive-menu-toggle {
+    margin-left: 0;
+}
+
+/*overrides*/
+.navbar.container {
+    /* 
+margin-left: calc(51% - 50vw);
+    margin-right: calc(50% - 50vw);
+ */
+    width: 100%;
+    max-width: 100% !important;
+    padding: 0 50px;
+    padding: 0 2vw;
+    position: relative;
+    background: #fff;
+    border: none;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+header.navbar-default.container {
+    /* border-bottom: 2px solid #eee; */
+    box-shadow: 0 0px 20px rgba(0,0,0,.1);
+    position: relative;
+	z-index: 500;
+}
+.nav > li > a:hover, .nav > li > a:focus{
+	background: none;
+}
+.region-header {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+    background: url(/themes/custom/bot_custom/images/bkg-pattern.jpg) repeat; 
+}
+.breadcrumb {
+    padding: 20px 35px;
+    background: none;
+    clear: both; 
+    margin-bottom: 0;
+}
+.breadcrumb > li + li:before,
+.breadcrumb > li a {
+    color: #002e5d;
+}
+
+.breadcrumb > .active {
+    color: #910048;
+}
+.region-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.secondary-menu {
+    order: 2;
+    background: #f1f1f1;
+}
+body:not(.page-node-type-landing) .region-header nav ~ .region-content {
+    margin-top: 40px;
+}
+
+/*navigation*/
+.responsive-menu-toggle-icon span.label {
+    display: none;
+}
+.navbar-header {
+    margin: 0 auto;
+    z-index: 300;
+    position: relative;
+}
+
+li.expanded.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    border: none;
+    min-width: 300px;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background: none;
+    color: #910048;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #002e5d;
+    font-size:16px;
+    font-weight: 500;
+/*    for hover*/
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 5px;
+    font-family: futura-pt, sans-serif;
+}
+.navbar-default .navbar-nav > li > a:before {
+/*    for hover*/
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #002e5d;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.navbar-default .navbar-nav > li > a:hover:before, 
+.navbar-default .navbar-nav > li > a:focus:before,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:before, 
+.navbar-default .navbar-nav > .active > a:hover:before, 
+.navbar-default .navbar-nav > .active > a:focus:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+    left: 0;
+    right: 0;
+    color:#910048;
+}
+.navbar-default .navbar-nav > li > a:hover:before {
+    background: #910048;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+    background:none;
+}
+
+@media screen and (max-width:768px) {
+    header .nav > li {
+        position: relative;
+        display: block;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+/*SEARCH OVERLAY*/
+.search-trigger {
+    margin-left: 20px;
+}
+.sicon, .cicon {
+    margin: 0;
+}
+header #search-btn {
+    color: #002e5d;
+    font-size: 0;
+}
+header #search-btn:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f002";
+    font-size: 16px;
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s
+}
+
+header .form-control {
+    font-size: 16px;
+}
+header #close-btn {
+    font-size: 0;
+    opacity: 1.0;
+    z-index: 999;
+    position: absolute;
+    top: 15px;
+    margin-right: 5px;
+    text-shadow: none;
+    right: 0;
+}
+header #close-btn:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f057";
+    font-size: 16px;
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s
+}
+#block-exposedformsearch-contentpage-1 .control-label {
+    display: none;
+}
+#block-exposedformsearch-contentpage-1 {
+    width: 100%;
+    z-index: 99;
+    margin-left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 20px 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+#block-exposedformsearch-contentpage-1 .form-actions {
+    position: absolute;
+    margin-left: 5px;
+}
+@media screen and (min-width:768px) {
+    #block-exposedformsearch-contentpage-1 {
+        
+    }
+    header #close-btn {
+        top: 30px;
+    }
+    .user-logged-in header #close-btn {
+        top: -15px;
+    }
+}
+#block-exposedformsearch-contentpage-1 form {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#block-exposedformsearch-contentpage-1 form .form--inline {
+    width: 100%;
+    color: #313131;
+    display: flex;
+    align-items: center;
+} 
+#block-exposedformsearch-contentpage-1  form {
+    width: 100%;
+}
+#block-exposedformsearch-contentpage-1 .form-row {
+    display: block;
+}
+#block-exposedformsearch-contentpage-1 .input-group {
+    width: 100%;
+    margin-top: 20px;
+}
+#block-exposedformsearch-contentpage-1 .js-form-item {
+    width: 100%;
+    order: 2;
+    margin: 0;
+}
+#block-exposedformsearch-contentpage-1 .btn-primary {
+    border: none;
+}
+#block-exposedformsearch-contentpage-1 .input-group-btn {
+    position: absolute;
+    order: 2;
+    left: 20px;
+    top: 53%;
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#block-exposedformsearch-contentpage-1 input {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding-left: 30px;
+    font-size: 22px;
+    height: 60px;
+    color: #910048;
+    border-bottom: 3px solid #e1e1e1;
+    border-radius: 0;
+}
+.cicon {
+    margin: 0 !important;
+}
+#block-exposedformsearch-contentpage-1 .js-form-submit {
+    font-size: 0;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+#block-exposedformsearch-contentpage-1 .js-form-submit .icon {
+    font-size: 20px;
+    color: #313131;
+}
+#block-exposedformsearch-contentpage-1 input::placeholder {
+    color: #7dc7df;
+}
+#block-exposedformsearch-contentpage-1 .input-group-btn button {
+    background: none;
+    border: none;
+    color: #313131;
+    padding: 0;
+}
+#block-exposedformsearch-contentpage-1, header #close-btn {
+    display: none;
+}
+
+
+
+.responsive-menu-toggle-icon:before, .responsive-menu-toggle-icon:after, .responsive-menu-toggle-icon span.icon {
+    background: #002e5d;
+}
+#block-bot-custom-account-menu {
+    margin-left: auto;
+}
+
+@media screen and (min-width:1650px) {
+    .navbar-default .navbar-nav > li > a {
+        font-size: 21px;
+    }
+}
+.region-navigation {
+    display: flex;
+    align-items: center;
+}
+.navbar-nav > li {
+    padding: 0 15px;
+}
+@media screen and (max-width:1300px) {
+    .region-navigation {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        min-height: 100px;
+    }
+    #block-bot-custom-main-menu,
+    #block-bot-custom-account-menu {
+        margin-left: 90px;
+    }
+    a.logo {
+        position: absolute;
+    }
+    #block-bot-custom-main-menu {
+        margin-top: 20px;
+    }
+    .search-trigger {
+        margin-left: auto;
+        margin-top: -15px;
+    }
+    .navbar-right .dropdown-menu {
+		right: unset;
+		left: 0;
+	}
+}
+@media screen and (max-width:991px) {
+    .region-navigation nav {
+        display: none;
+    }
+    .search-trigger {
+        margin-top: 30px;
+    }
+    .responsive-menu-toggle {
+        margin-top: 28px;
+    }
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    background-color: #fff;
+    color: #910048;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	background: none;
+	color: #910048;
+}
+
+.user-logged-in .navbar-default .navbar-nav > li >
+a.neon-dashboard {
+    display: inline-block;
+}
+.navbar-default .navbar-nav > li > a.neon-dashboard {
+    display: none;
+}

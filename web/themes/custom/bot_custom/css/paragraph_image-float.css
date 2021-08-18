@@ -1,0 +1,31 @@
+@media screen and (min-width:768px){	
+	.paragraph--view-mode-image-50-right .image-wrapper-caption, 
+	.paragraph--view-mode-image-25-right .image-wrapper-caption {
+		float: right;
+        margin-left: 25px;
+	}
+	.paragraph--view-mode-image-50-left .image-wrapper-caption, 
+	.paragraph--view-mode-image-25-left .image-wrapper-caption {
+		float: left;
+        margin-right: 25px;
+	}
+	.paragraph--view-mode-image-50-right .image-wrapper-caption, 
+	.paragraph--view-mode-image-50-left .image-wrapper-caption {
+		width: 50%;
+	}
+	.paragraph--view-mode-image-25-right .image-wrapper-caption, 
+	.paragraph--view-mode-image-25-left .image-wrapper-caption {
+		width: 25%;
+	}
+}
+.image-wrapper-caption .field--name-field-description {
+    text-align: left;
+    margin-top: 10px;
+}
+.image-caption {
+    text-align: left;
+    margin-top: 10px;
+}
+.full-width .image-caption {
+    margin: 10px 20px 0;
+}

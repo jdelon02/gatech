@@ -1,0 +1,370 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.path-neon #search-btn svg { font-size:14px; }
+.path-neon #search-btn:after,
+#neonAccountID {
+    display: none;
+}
+.neoncrm_broadcast_section {
+    margin: 40px auto !important;
+}
+.neon-content *[style]{
+    font-family: source-sans-pro, sans-serif !important;
+    font-size: 19px !important;
+}
+.neon-content table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.neon-content table th,
+.neon-content table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #e9e8f1;
+}
+.neon-content th:last-child, 
+.neon-content td:last-child {
+    padding-right: 0;
+}
+.neon-content .neoncrm-page-title {
+    margin-top: 30px;
+    text-align: center;
+}
+.neoncrm-event-name,
+.neoncrm-event-date,
+#attendeeHelp {
+    text-align: center;
+}
+
+
+.neon-content form[name="forgetPasswordBean"] table th, 
+.neon-content form[name="forgetPasswordBean"] td {
+    border: none;
+    padding: 10px 0 10px;
+}
+
+form[action="/np/publicaccess/eventRegistrationSave.do"],
+form[action="/np/publicaccess/eventRegistrationSave.do"] ~ div,
+#attendeeTable,
+.neoncrm-form-buttons,
+.neon-content .neoncrm-page-subtitle,
+.neon-content .neoncrm-event-description,
+.neon-content .neoncrm-event-footer-actions,
+.neon-content > *:not(form[name="pShoppingCartFormBean"]),
+.neon-content > #sfp-alternative {
+    max-width: 650px;
+    margin: 0 auto;
+}
+form[name="cShoppingCartFormBean"],
+form[name="cShoppingCartFormBean"] .neoncrm-page-subtitle  {
+    max-width: none !important;
+}
+form[name="cShoppingCartFormBean"] ~ link[href="/np/css/publicaccess/paymentStyle.css"] ~ .neoncrm-page-title {
+    display:none;
+}
+.neoncrm-checkbox-group {
+    display: flex;
+    align-items: center;
+}
+.neoncrm-login-content div[for="persistCookieChk"],
+.neoncrm-login-content input[for="persistCookieChk"] {
+    margin:0 !important;
+}
+.neoncrm-login-content div[for="persistCookieChk"] {
+    padding-left: 5px;
+    font-size: 14px !important;
+}
+.neon-content > #sfp-alternative {
+    display: block;
+    font-size: inherit !important;
+    height: auto;
+}
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+.neoncrm-content img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+form[name="pShoppingCartFormBean"] .neoncrm-page-subtitle {
+    max-width: 100%;
+    margin: 20px 0;
+}
+.neon-content .neoncrm-event-footer-actions {
+    display: flex;
+}
+form[action="/np/publicaccess/eventRegistrationSave.do"] .neoncrm-content div *:not(input[type="checkbox"]),
+#attendeeTable .neoncrm-attendee *:not(.neoncrm-checkbox):not(input[type="checkbox"]):not(label),
+.neoncrm-content input[type="text"] {
+    width:100%;
+}
+.neonRadioInput {
+    width: auto!important;
+}
+form[action="/np/publicaccess/eventRegistrationSave.do"] .neoncrm-content div,
+form[action="/np/publicaccess/eventRegistrationSave.do"] .neoncrm-content ~ div,
+form[action="/np/publicaccess/eventRegistrationSave.do"] ~ div {
+    margin: 0 auto;
+}
+form[action="/np/publicaccess/eventRegistrationSave.do"] .neoncrm-section-title p {
+    display: none;
+}
+input[type="text"] {
+    border-radius: 2px;
+    border-width: 1px;
+}
+.neoncrm-button,
+.neon-content input[type="submit"],
+.neon-content input[type="button"] {
+    background-color: #910048;
+    border-color: #910048;
+    color: #fff;
+    min-width: 100px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin:15px 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.neoncrm-required::after {
+    color: #cc0000;
+}
+img[src="/np/images/s.gif"],
+img[src="/images/s.gif"] {
+    display: none;
+}
+.neoncrm-event-registration-list-summary ~ .neoncrm-link-container a.neoncrm-link:before {
+    content: '\f040';
+    font-family: fontAwesome;
+    display: inline-block;
+    margin-right: 5px;
+}
+.neoncrm-event-registration-list-summary ~ .neoncrm-link-container a {
+    margin-top: 10px;
+}
+
+
+
+form[name="cShoppingCartFormBean"] {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+form[name="cShoppingCartFormBean"] h3 b {
+    text-align: center;
+    display: block;
+    color: #002e5d;
+    font-size: 39px;
+    font-size: 2.4375rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 1.1;
+    font-family: futura-pt, sans-serif;
+}
+form[name="forgetPasswordBean"] .neon2Header {
+    color: #002e5d;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 1.1;
+    font-family: futura-pt, sans-serif;
+}
+div#buttonDisplay.neoncrm-org-toggle {
+	display: block!important;
+}
+.neoncrm-org-toggle {
+    display: none !important;
+}
+/*portal login page*/
+.portal-page {
+    margin-top: 20px;
+}
+#portal-boxes,
+#recent-community-posts,
+#latest-resources {
+    margin-bottom: 40px;
+}
+.portal-page .arrow-text:after {
+    content: '\f061';
+    font-family: "fontAwesome";
+    margin-left: 10px;
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s;
+}
+.portal-box-container .box-interior {
+    background: #e6e5ee;
+    border-radius: 10px;
+    padding: 20px;
+}
+.portal-box-container .box {
+    margin-bottom: 15px;
+}
+.box-interior h3 {
+    margin-top: 0;
+}
+.box-interior ul {
+    list-style: none;
+    padding: 0;
+    font-weight: 700;
+}
+.portal-box-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portal-box-container .box .box-interior {
+    height: 100%;
+}
+.post-header,
+.resources-header {
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.post-header a,
+.resources-header a {
+    text-align: right;
+    display: block;
+}
+.post-date {
+    text-align: center;
+}
+.post-row {
+    border-top: 2px solid #f5f5f5;;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+}
+.portal-page #rss-feeds {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-bubbles img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+@media screen and (max-width:992px) {
+    .post-header a, .resources-header a {
+        text-align: left;
+    }
+    .portal-box-container .box {
+        width: 100%;
+    }
+}
+#latest-resources {
+    clear: both;
+}
+.post-row p {
+    margin-bottom: 10px;
+}
+.post-row:last-child {
+    border-bottom: 2px solid #f5f5f5;;
+}
+.resource-inner h3 {
+    margin-top: 0;
+}
+.portal-page.container {
+    width: 80vw;
+    margin-left: calc(50% - 40vw);
+    margin-right: calc(50% - 80vw);
+}
+
+.neon-content input[onclick="eventRegistrationNext()"] {
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+}
+.neon-content .neoncrm-event-description,
+p + script + form[action="/np/publicaccess/eventRegistrationSave.do"] {
+        margin-top: 20px;
+    padding-top: 20px;
+    border-top: 4px solid #f5f5f5;
+}
+.neoncrm-event-name + .neoncrm-event-date {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #f5f5f5;
+}
+
+.neoncrm-event-date ~ h2.neoncrm-page-subtitle {
+    display: none;
+}
+.neoncrm-event-name {
+    font-weight: bold;
+    color: #910048;
+}
+.neon-content {
+    max-width:90%;
+    padding: 0 15px;
+    margin: 40px auto;
+}
+.neoncrm-page-title + p {
+    text-align: center;
+}
+form[action="/np/constituent/reSubscribeSubmit.do"] .neoncrm-checkbox-group {
+    display: flex;
+    align-items: center;
+}
+.neoncrm-checkbox {
+    display: flex;
+    margin:15px 0 !important;
+    line-height: normal;
+}
+.neoncrm-checkbox label,
+.neoncrm-checkbox-group label {
+    margin: 0 0 0 10px;
+}
+
+.neoncrm-login-content #z2-login-sm {
+    display: none;
+}
+.neoncrm-login-content *:not(input[type="checkbox"]):not(.neoncrm-button) {
+    width: 100%;
+    max-width: 100%!important;
+    text-align: left!important;
+}
+
+/* forgot password bean */
+form[action="/np/security/forgetPassword.do"] .neonFieldLabel {
+    font-size: 0;
+}
+
+form[action="/np/security/forgetPassword.do"] .neonFieldLabel:before {
+    content:'Account Help';
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    position: relative;
+}
+form[action="/np/security/forgetPassword.do"] .neonFieldLabel:after {
+    content: 'Are you setting up your account for the first time?  Or, did you forget your password?';
+    font-size: 16px;
+    display: block;
+    position: relative;
+}
+form[action="/np/security/forgetPassword.do"] .neonValidate:before {
+    content: 'Enter the email address associated with your account. We will email you a link to get set up.';
+    display:block;
+    font-size: 16px;
+    position: relative;
+}
