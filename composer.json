@@ -9,22 +9,6 @@
             "url": "https://packages.drupal.org/8"
         },
         {
-          "type": "vcs",
-          "url": "https://github.gatech.edu/ICWebTeam/gt_profile_curie.git"
-        },
-        {
-          "type": "vcs",
-          "url": "https://github.gatech.edu/ICWebTeam/gt_theme-8.x.git"
-        },
-        {
-          "type": "vcs",
-          "url": "https://github.gatech.edu/ICWebTeam/gt_tools-8.x.git"
-        },
-        {
-          "type": "vcs",
-          "url": "https://github.gatech.edu/ICWebTeam/hg_reader-8.x.git"
-        },
-        {
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
